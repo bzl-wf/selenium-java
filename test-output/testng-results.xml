@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="13894" started-at="2020-08-05T06:02:19Z" finished-at="2020-08-05T06:02:33Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="13894" started-at="2020-08-05T06:02:19Z" finished-at="2020-08-05T06:02:33Z">
+      <class name="org.seleniumhq.selenium.selenium_java.LoginAuthTest">
+        <test-method status="PASS" signature="beforEach()[pri:0, instance:org.seleniumhq.selenium.selenium_java.LoginAuthTest@14acaea5]" name="beforEach" is-config="true" duration-ms="5440" started-at="2020-08-05T14:02:19Z" finished-at="2020-08-05T14:02:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforEach -->
+        <test-method status="PASS" signature="test()[pri:0, instance:org.seleniumhq.selenium.selenium_java.LoginAuthTest@14acaea5]" name="test" duration-ms="7840" started-at="2020-08-05T14:02:25Z" finished-at="2020-08-05T14:02:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterEach()[pri:0, instance:org.seleniumhq.selenium.selenium_java.LoginAuthTest@14acaea5]" name="afterEach" is-config="true" duration-ms="605" started-at="2020-08-05T14:02:32Z" finished-at="2020-08-05T14:02:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEach -->
+      </class> <!-- org.seleniumhq.selenium.selenium_java.LoginAuthTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

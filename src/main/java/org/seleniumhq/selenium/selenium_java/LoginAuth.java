@@ -1,7 +1,5 @@
 package org.seleniumhq.selenium.selenium_java;
 
-import java.awt.Dimension;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,19 +10,15 @@ import org.openqa.selenium.interactions.Actions;
 public class LoginAuth {
 	/**
 	 * 登陆
+	 * @throws InterruptedException 
 	 */
-	public void loginAuth() {
+	public void loginAuth() throws InterruptedException {
 		// TODO Auto-generated method stub
 		
-		
-		
-		
-		
-		
-		
+
 		// 指定浏览器驱动路径
 		
-		String chromePath = "D://Tool//IDEA//chromedriver.exe";
+		String chromePath = "D://Tool//eclipse//chromedriver_win32//chromedriver.exe";
 
 		// 设置指定键对值的系统属性
 		System.setProperty("webdriver.chrome.driver", chromePath);
@@ -38,14 +32,11 @@ public class LoginAuth {
 
 		driver.get("https://gitee.com/");
 		// 界面最大化
-//		driver.manage().window().maximize();
-		driver.manage().window().setSize(new org.openqa.selenium.Dimension(100, 200));
-		try {
+		driver.manage().window().maximize();
+//		driver.manage().window().setSize(new org.openqa.selenium.Dimension(100, 200));
+	
 			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	
 
 		driver.findElement(By.cssSelector(".item.git-nav-user__login-item")).click();
 		// 输入用户名
@@ -55,17 +46,11 @@ public class LoginAuth {
 		driver.findElement(By.id("user_password")).sendKeys(structureTest.password);
 		
 
-		WebElement urm =driver.findElement(By.id("user_remember_me"));
+		driver.findElement(By.id("user_remember_me")).click();;
 		
-//		actions.clickAndHold(urm).perform();
-		actions.click();
 		
-		try {
 			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	
 
 		// 点击登录
 		// driver.findElement(By.name("commit")).click();
@@ -74,12 +59,10 @@ public class LoginAuth {
 		log.submit();
 		
 		
-		String chromepath = "D:\\";
-		System.setProperty("WebChrome driver", chromePath);
+		Thread.sleep(5000);
+		driver.close();
 		
-		WebDriver driver2 = new ChromeDriver();
-		
-			
+	
 			
 	}
 

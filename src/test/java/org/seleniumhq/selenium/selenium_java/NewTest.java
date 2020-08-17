@@ -1,30 +1,20 @@
 package org.seleniumhq.selenium.selenium_java;
 
-import javax.annotation.Tainted;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriver.Navigation;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 
 public class NewTest {
 	private WebDriver driver;
-    @BeforeTest
     public void beforeEach() {
         System.setProperty("webdriver.chrome.driver","D://Tool//IDEA//chromedriver.exe");
         driver = new ChromeDriver();
     }
-    @AfterTest
     public void afterEach() {
         driver.quit();
     }
-    @Test
     public void test() throws InterruptedException  {
     	
     	

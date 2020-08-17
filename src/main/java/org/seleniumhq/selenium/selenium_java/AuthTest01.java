@@ -4,10 +4,11 @@ public class AuthTest01 {
 
 	static int a = 2;
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 		LoginAuth login = new LoginAuth();
 		login.loginAuth();
+	
 
 	}
 
